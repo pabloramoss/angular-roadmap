@@ -1,0 +1,13 @@
+<div class="home container mt-5">
+  <h1 class="text-center mb-4">Angular Roadmap 👋</h1>
+  <ul class="list-group">
+    <li *ngFor="let section of sections" class="list-group-item">
+      <a [routerLink]="section.url" class="text-decoration-none">
+        ⭕ {{ section.title }}
+      </a>
+    </li>
+  </ul>
+  <footer class="my-4 text-center text-muted">
+    <small>Made by Pablo Ramos</small>
+  </footer>
+</div>
