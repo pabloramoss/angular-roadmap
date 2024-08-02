@@ -2,17 +2,20 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Section1Component } from './section1.component';
 import { TodoComponent } from './pages/todo/todo.component';
+import { ChatComponent } from './pages/chat/chat.component';
 
 const routes: Routes = [
   {
     path: '',
     component: Section1Component,
-    children: [
-      {
-        path: 'todo',
-        component: TodoComponent
-      }
-    ]
+  },
+  {
+    path: 'todo',
+    component: TodoComponent
+  },
+  {
+    path: 'chat',
+    component: ChatComponent
   }
 ];
 

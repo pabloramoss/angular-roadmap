@@ -1,1 +1,14 @@
-<p>todo works!</p>
+<div class="container">
+  <h1>Todo list</h1>
+  <app-task-form (addTask)="onAddTask($event)"></app-task-form>
+  @for (todo of todoList; track todo ) {
+    <app-task (deleteTask)="onDeleteTask($event)" (toggleDone)="onToggleDone($event)" [task]="todo"></app-task>
+  }
+  @if (todoList.length === 0) {
+    <p>No tasks</p>
+  }
+</div>
+
+<pre>
+  {{todoList | json}}
+</pre>

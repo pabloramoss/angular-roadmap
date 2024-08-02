@@ -1,0 +1,7 @@
+<section class="container">
+  <div>
+    <input type="checkbox" [checked]="task?.done" (change)="onToggleDone()">
+    <span [ngClass]="{'task-done': task?.done}">{{task?.title}}</span>
+  </div>
+  <button class="btn btn-danger" (click)="onDeleteTask()">X</button>
+</section>
