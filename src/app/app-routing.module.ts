@@ -10,6 +10,10 @@ const routes: Routes = [
   { path: 'section-1', 
     loadChildren: () => import('./pages/section1/section1.module').then(m => m.Section1Module),
   },
+  {
+    path: 'section-3',
+    loadChildren: () => import('./pages/section3/section3.module').then(m => m.Section3Module),
+  }
 ];
 
 @NgModule({

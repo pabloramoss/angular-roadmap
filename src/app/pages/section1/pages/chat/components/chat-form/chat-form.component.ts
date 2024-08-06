@@ -2,6 +2,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Message } from '../../models/message.interface';
 
+const USER_AVATAR_URL="https://pbs.twimg.com/media/FErSxElWYAUEpe2?format=jpg&name=medium";
 @Component({
   selector: 'app-chat-form',
   templateUrl: './chat-form.component.html',
@@ -28,7 +29,7 @@ export class ChatFormComponent {
       text: this.form.value.userMessage,
       date: new Date(),
       isAgent: false,
-      avatar: 'https://st5.depositphotos.com/72897924/62255/v/450/depositphotos_622556394-stock-illustration-robot-web-icon-vector-illustration.jpg',
+      avatar: USER_AVATAR_URL,
       name: 'User'
     }); 
 

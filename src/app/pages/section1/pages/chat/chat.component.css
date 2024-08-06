@@ -1,0 +1,23 @@
+.container {
+  max-width: 500px;
+  border: 1px solid lightblue;
+  border-radius: 4x;
+  padding: 12px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.messages-container {
+  height: 80vh;
+  overflow-y: auto;
+}
+
+h5 {
+  text-align: center;
+}
+
+hr {
+  margin: 4px;
+}

@@ -1,9 +1,9 @@
 @if (message) {
   <div class="chat-message" [ngClass]="{'is-agent': message.isAgent}">
     <div class="chat-message__avatar">
-      <img [src]="message.avatar ? message.avatar : 'https://via.placeholder.com/30'"  alt="{{ message.isAgent ? 'Agent' : message.name }}">
+      <img [src]="message.isAgent ? agentAvatar : message.avatar"  alt="{{ message.isAgent ? 'Agent' : message.name }}">
     </div>
-    <div class="chat-message__content">
+    <div class="chat-message__content" [ngClass]="{'is-agent': message.isAgent}">
       <div class="chat-message__name">{{ message.isAgent ? 'Agent' : message.name }}</div>
       <div class="chat-message__text">{{ message.text }}</div>
     </div>

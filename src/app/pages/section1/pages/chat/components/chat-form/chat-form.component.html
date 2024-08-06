@@ -1,8 +1,7 @@
 
 <form [formGroup]="form" (submit)="onSubmit()">
   <div class="form-group">
-    <!-- <input type="text" class="form-control" formControlName="agentMessage" placeholder="Type a message"> -->
     <input type="text" class="form-control" formControlName="userMessage" placeholder="Type a message">
+    <button type="submit" class="btn btn-primary">Send</button>
   </div>
-  <button type="submit" class="btn btn-primary">Send</button>
 </form>
