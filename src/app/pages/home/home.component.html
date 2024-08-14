@@ -3,7 +3,7 @@
   <ul class="list-group">
     <li *ngFor="let section of sections" class="list-group-item">
       <a [routerLink]="section.url" class="text-decoration-none">
-        ⭕ {{ section.title }}
+        {{ section.status }} {{ section.title }}
       </a>
     </li>
   </ul>
